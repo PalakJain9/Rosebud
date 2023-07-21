@@ -123,9 +123,70 @@ function Navbar () {
   )
 }
 
+function Featured () {
+  let itemStyle = "w-1/2 lg:w-1/4 h-[10rem] flex justify-center items-center border-black border-b-2 border-r-2 p-[0.5rem]"
+
+  return (
+    <div
+      className="flex flex-row flex-wrap justify-center items-center w-full"
+    >
+      <div
+        className={` ${itemStyle} border-l-2`}
+      >
+        <Image 
+          src="/gdsc.png"
+          alt="Google Developer Student Clubs"
+          width={200}
+          height={200}
+          className="h-1/2 w-auto"
+          title="Google Developer Student Clubs"
+        />
+      </div>
+
+      <div
+        className={itemStyle}
+      >
+        <Image 
+          src="/figma.png"
+          alt="Friends of Figma"
+          width={200}
+          height={200}
+          className="w-auto h-1/2"
+          title="Friends of Figma"
+        />
+      </div>
+
+      <div
+        className={` ${itemStyle} border-l-2 lg:border-l-0`}
+      >
+        <Image 
+          src="/tymely.svg"
+          alt="Tymely"
+          width={200}
+          height={200}
+          className="h-1/2 w-auto"
+          title="Tymely"
+        />
+      </div>
+
+      <div
+        className={itemStyle}
+      >
+        <Image 
+          src="/recruitify.svg"
+          alt="recruitify"
+          width={200}
+          height={200}
+          className="h-1/2 w-auto"
+          title="Recruitify"
+        />
+      </div>
+    </div>
+  )
+}
 
 export default function Hero () {
-  let buttonStyle = "bg-yellow hover:bg-gray-800 text-gray-800 hover:text-yellow px-4 py-2"
+  let buttonStyle = "bg-yellow hover:bg-gray-800 text-gray-800 hover:text-yellow px-4 py-2 border-2 border-black"
   return (
     <div 
       className="flex flex-col justify-start items-start w-full h-full"
@@ -155,7 +216,7 @@ export default function Hero () {
           <p
             className="text-lg md:text-xl"
           >
-            Go from task description to clean code to successful deployments.
+            Go from task description to clean code to bug-free deployments.
           </p>
 
           {/* buttons */}
@@ -196,6 +257,7 @@ export default function Hero () {
           />
         </div>
       </div>
+      <Featured />
     </div>
   )
 }
