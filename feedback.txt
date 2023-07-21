@@ -1,0 +1,2 @@
+dropdown not responsive in mobile view
+in smaller devices: image doesn't fit well

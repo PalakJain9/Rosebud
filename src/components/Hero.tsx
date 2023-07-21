@@ -1,4 +1,5 @@
 import { MailCheckIcon, GithubIcon, LinkedinIcon } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 import React from "react"
 
@@ -13,7 +14,7 @@ function Navbar () {
       className="flex flex-col justify-start items-start gap-0 w-full h-full"
     >
       <div 
-        className="w-full h-full flex grow flex-row justify-between items-center gap-2 border-solid border-2 border-black p-[2rem] py-[3rem] font-medium text-lg"
+        className="w-full h-full flex grow flex-col md:flex-row justify-start items-start md:justify-between md:items-center gap-2 border-solid border-2 border-black px-[1rem] md:px-[2rem] py-[3rem] font-medium text-lg"
       >
         <Link
           href="/"
@@ -124,11 +125,77 @@ function Navbar () {
 
 
 export default function Hero () {
+  let buttonStyle = "bg-yellow hover:bg-gray-800 text-gray-800 hover:text-yellow px-4 py-2"
   return (
     <div 
       className="flex flex-col justify-start items-start w-full h-full"
     >
       <Navbar />
+      
+      <div
+        className="flex flex-col lg:flex-row justify-start items-center w-full border-2 border-black border-t-0"
+      >
+        {/* text */}
+        <div
+          className="flex flex-col gap-8
+           justify-start items-start w-full lg:w-1/2 px-[1rem] md:px-[2rem] lg:px-[5rem] py-[4rem] lg:py-[5rem] text-gray-800 font-bold"
+        >
+          <h1
+            className="text-3xl md:text-4xl leading-[2.3rem] md:leading-[2.9rem]"
+          >
+            Palak, Developer. Writes Code, Works Smart and Ready to Make History. 
+          </h1>
+
+          <h3
+            className="text-2xl md:text-3xl"
+          >
+            Craft a great team with Palak.
+          </h3>
+
+          <p
+            className="text-lg md:text-xl"
+          >
+            Go from task description to clean code to successful deployments.
+          </p>
+
+          {/* buttons */}
+          <div
+            className="flex flex-row flex-wrap gap-4 justify-start items-center"
+          >
+            <Link
+              href="/resume.pdf"
+              className={buttonStyle}
+            >
+              <button>
+                View Resume
+              </button>
+            </Link>
+
+            <Link
+              href="/"
+              className={buttonStyle}
+            >
+              <button>
+                Learn More
+              </button>
+            </Link>
+
+          </div>
+        </div>
+
+        {/* image */}
+        <div
+          className="w-full lg:w-1/2 flex justify-center items-center border-t-2 lg:border-l-2 lg:border-t-0 border-black"
+        >
+          <Image 
+            src="/heroImg.svg"
+            alt="hero image"
+            width={200}
+            height={200}
+            className="w-full h-full"
+          />
+        </div>
+      </div>
     </div>
   )
 }

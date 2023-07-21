@@ -3,5 +3,5 @@
 @tailwind utilities;
  
 .universalPadding {
-  @apply px-[1.5rem] md:px-[2rem] lg:px-[13rem]
+  @apply px-[1rem] md:px-[2rem] lg:px-[13rem]
 }
