@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Developer () {
   let buttonStyle = "bg-yellow hover:bg-gray-800 text-gray-800 hover:text-yellow px-4 py-2 border-2 border-black";
-  let itemStyle = "w-full md:w-1/2 h-[27rem] flex flex-col justify-center items-center border-black border-b-2 p-[0.5rem]";
-  let imgContainerStyle = "absolute top-0 h-1/2 w-full flex justify-center items-center border-b-2 border-black";
-  let taskDescpStyle = "h-1/2 w-full text-xl font-bold flex flex-col justify-center items-start gap-4 p-[1rem] absolute left-0 right-0 bottom-0";
+  let itemStyle = "w-full md:w-1/2 h-[28rem] md:h-[21rem] lg:h-[24rem] flex flex-col justify-center items-center border-black border-b-2 p-[0.5rem]";
+  let taskDescpStyle = "h-3/5 w-full text-xl font-bold flex flex-col justify-center items-start gap-4 p-[1rem]";
+  let highlightTextStyle = "text-black font-extrabold";
 
   return (
     <div
@@ -55,24 +55,12 @@ export default function Developer () {
 
       {/* image grid */}
       <div
-        className="w-full lg:w-1/2 border-t-2 lg:border-l-2 lg:border-t-0 border-black flex flex-row flex-wrap justify-center items-center"
+        className="w-full lg:w-1/2 border-t-2 lg:border-l-2 lg:border-t-0  border-black flex flex-row flex-wrap justify-center items-center"
       >
         {/* item 1 */}
         <div
-          className={`${itemStyle} relative md:border-r-2`}
-        >
-          <div
-            className={imgContainerStyle}
-          >
-            <Image 
-              src="/tymelyHero.PNG"
-              alt="tymely"
-              width={1024}
-              height={1024}
-              className="h-full w-auto"
-            />
-          </div>
-          
+          className={`${itemStyle} md:border-r-2`}
+        > 
           <div
             className={taskDescpStyle}
           >
@@ -80,9 +68,11 @@ export default function Developer () {
               Frontend Developer: Tymely
             </p>
             <p
-              className="text-gray-600 text-lg"
+              className="text-gray-600 text-base"
             >
-              Skills: Next.js, TypeScript, Tailwind CSS, React, Open AI, Figma, MySQL, Git, GitHub
+              Enhanced user engagement by <span className={highlightTextStyle}>31%</span> by building a dynamic priority task list, allowing users to enter, reorder, and delete
+              tasks. Onboarded <span className={highlightTextStyle}>280</span> users within <span className={highlightTextStyle}>21</span> days of deployment by utilizing Next.js 13 server-side rendering (SSR) techniques for
+              better performance.
             </p>
           </div>
 
@@ -90,20 +80,8 @@ export default function Developer () {
 
         {/* item 2 */}
         <div
-          className={`${itemStyle} relative`}
+          className={`${itemStyle}`}
         >
-          <div
-            className={imgContainerStyle}
-          >
-            <Image 
-              src="/developerDays.png"
-              alt="Developer Days Hackathon"
-              width={1024}
-              height={1024}
-              className="h-3/4 w-auto"
-            />
-          </div>
-          
           <div
             className={taskDescpStyle}
           >
@@ -111,9 +89,9 @@ export default function Developer () {
               Top 15 in UI/UX Hackathon
             </p>
             <p
-              className="text-gray-600 text-lg"
+              className="text-gray-600 text-base"
             >
-              Skills: Responsive Web Design, Figma, Moodboards, High-level &amp; low-level Prototyping
+              Crafted user-centric interfaces, researched users to develop high and low level prototypes for a car pool app. Emerged in top <span className={highlightTextStyle}>15</span> out of total <span className={highlightTextStyle}>124</span> participants nationwide from the UI/UX category in a national level hackathon.
             </p>
           </div>
 
@@ -121,20 +99,8 @@ export default function Developer () {
 
         {/* item 3 */}
         <div
-          className={`${itemStyle} relative md:border-r-2`}
+          className={`${itemStyle} md:border-r-2 md:border-b-0`}
         >
-          <div
-            className={imgContainerStyle}
-          >
-            <Image 
-              src="/bnlw.png"
-              alt="Banasthali Vidyapith"
-              width={1024}
-              height={1024}
-              className="h-5/6 w-auto"
-            />
-          </div>
-          
           <div
             className={taskDescpStyle}
           >
@@ -142,9 +108,10 @@ export default function Developer () {
               Full Stack Developer: Banasthali Vidyapith
             </p>
             <p
-              className="text-gray-600 text-lg"
+              className="text-gray-600 text-base"
             >
-              Skills: React, Node.js, MongoDB, Express.js, Mongoose, Figma, Git, GitHub
+              Improved experience for <span className={highlightTextStyle}>16k+</span> students by developing a responsive web application. And accelerated user engagement by <span className={highlightTextStyle}>15%</span> by building an article saving system, enabling users to refer their saved content
+              anytime and anywhere.
             </p>
           </div>
 
@@ -153,20 +120,8 @@ export default function Developer () {
 
         {/* item 4 */}
         <div
-          className={`${itemStyle} relative border-b-0`}
+          className={`${itemStyle} border-b-0`}
         >
-          <div
-            className={imgContainerStyle}
-          >
-            <Image 
-              src="/recruitifyHero.PNG"
-              alt="recruitify"
-              width={1024}
-              height={1024}
-              className="h-full w-full"
-            />
-          </div>
-          
           <div
             className={taskDescpStyle}
           >
@@ -174,9 +129,9 @@ export default function Developer () {
               Building Recruitify
             </p>
             <p
-              className="text-gray-600 text-lg"
+              className="text-gray-600 text-base"
             >
-              Skills: Next.js, TypeScript, Tailwind CSS, React, MongoDB, Prisma, NextAuth
+              Reduced setup time of placement portals by <span className={highlightTextStyle}>100%</span> by designing and developing a user friendly web application to enable colleges to setup their placement portals in no time. Increased search relevance by up to <span className={highlightTextStyle}>15%</span> by designing a tag-based filtering UI using React.
             </p>
           </div>
 
