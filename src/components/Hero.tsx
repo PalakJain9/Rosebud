@@ -187,6 +187,7 @@ function Featured () {
 
 export default function Hero () {
   let buttonStyle = "bg-yellow hover:bg-gray-800 text-gray-800 hover:text-yellow px-4 py-2 border-2 border-black"
+  
   return (
     <div 
       className="flex flex-col justify-start items-start w-full h-full"
