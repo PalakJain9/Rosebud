@@ -3,5 +3,9 @@
 @tailwind utilities;
  
 .universalPadding {
-  @apply px-[1rem] md:px-[2rem] lg:px-[13rem]
+  @apply px-[1rem] md:px-[1.5rem] xl:px-[2rem] 2xl:px-[5rem]
+}
+
+.buttonStyle {
+  @apply bg-yellow hover:bg-gray-800 text-gray-800 hover:text-yellow px-4 py-2 border-2 border-black
 }

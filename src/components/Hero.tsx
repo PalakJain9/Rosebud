@@ -27,7 +27,7 @@ function Navbar () {
           
           {/* navbar links */}
           <div
-            className="hidden lg:flex flex-row gap-8 justify-center items-center"
+            className="hidden xl:flex flex-row gap-8 justify-center items-center"
           >
             <Link
               href="#dev"
@@ -82,7 +82,7 @@ function Navbar () {
         {/* dropdown */}
         <button
           onClick={() => setIsClicked(!isClicked)}
-          className={`flex lg:hidden border-2 border-black px-2 text-3xl
+          className={`flex xl:hidden border-2 border-black px-2 text-3xl
           ${isClicked ? "bg-yellow" : "bg-white"}`}
         >  =
         </button>
@@ -124,7 +124,7 @@ function Navbar () {
 }
 
 function Featured () {
-  let itemStyle = "w-1/2 lg:w-1/4 h-[10rem] flex justify-center items-center border-black border-b-2 border-r-2 p-[0.5rem]"
+  let itemStyle = "w-1/2 xl:w-1/4 h-[10rem] flex justify-center items-center border-black border-b-2 border-r-2 p-[0.5rem]"
 
   return (
     <div
@@ -134,7 +134,7 @@ function Featured () {
         className={` ${itemStyle} border-l-2`}
       >
         <Image 
-          src="/gdsc.png"
+          src="/gdsc.svg"
           alt="Google Developer Student Clubs"
           width={200}
           height={200}
@@ -147,7 +147,7 @@ function Featured () {
         className={itemStyle}
       >
         <Image 
-          src="/figma.png"
+          src="/figma.svg"
           alt="Friends of Figma"
           width={200}
           height={200}
@@ -157,7 +157,7 @@ function Featured () {
       </div>
 
       <div
-        className={` ${itemStyle} border-l-2 lg:border-l-0`}
+        className={` ${itemStyle} border-l-2 xl:border-l-0`}
       >
         <Image 
           src="/tymely.svg"
@@ -195,17 +195,17 @@ export default function Hero () {
       <Navbar />
       
       <div
-        className="flex flex-col lg:flex-row justify-start items-center w-full border-2 border-black border-t-0"
+        className="flex flex-col xl:flex-row justify-start items-center w-full border-2 border-black border-t-0"
       >
         {/* text */}
         <div
           className="flex flex-col gap-8
-           justify-start items-start w-full lg:w-1/2 px-[1rem] md:px-[2rem] lg:px-[5rem] py-[4rem] lg:py-[5rem] text-gray-800 font-bold"
+           justify-start items-start w-full xl:w-1/2 px-[1rem] md:px-[2rem] xl:px-[5rem] py-[4rem] xl:py-[5rem] text-gray-800 font-bold"
         >
           <h1
             className="text-3xl md:text-4xl leading-[2.3rem] md:leading-[2.9rem]"
           >
-            Palak, Developer. Writes Code, Works Smart and Ready to Make History. 
+            Palak, Developer. Writes Code, Ready to Work Hard, Have Fun and Make History.
           </h1>
 
           <h3
@@ -247,7 +247,7 @@ export default function Hero () {
 
         {/* image */}
         <div
-          className="w-full lg:w-1/2 flex justify-center items-center border-t-2 lg:border-l-2 lg:border-t-0 border-black"
+          className="w-full xl:w-1/2 flex justify-center items-center border-t-2 xl:border-l-2 xl:border-t-0 border-black"
         >
           <Image 
             src="/heroImg.svg"
