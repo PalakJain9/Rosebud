@@ -1,11 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
+import styles from '@/styles/Developer.module.css';
 
 export default function Developer () {
-  let itemStyle = "w-full md:w-1/2 h-auto md:h-[20rem] flex flex-col justify-center items-center border-black border-b-2 p-[0.5rem]";
-  let taskDescpStyle = "h-3/5 w-full text-xl font-bold flex flex-col justify-center items-start gap-4 p-[1rem]";
-  let highlightTextStyle = "text-black font-extrabold";
-
+  
   return (
     <div
       id="developer"
@@ -19,7 +16,7 @@ export default function Developer () {
         <h1
           className="text-3xl md:text-4xl"
         >
-          Palak Jain: Frontend Developer
+          Palak Jain: Frontend/Fullstack Developer
         </h1>
 
         <h3
@@ -53,16 +50,16 @@ export default function Developer () {
         </div>
       </div>
 
-      {/* image grid */}
+      {/* grid */}
       <div
-        className="w-full xl:w-1/2 border-t-2 xl:border-l-2 xl:border-t-0  border-black flex flex-row flex-wrap justify-center items-center"
+        className="w-full xl:w-1/2 border-t-2 xl:border-l-2 xl:border-t-0 border-black flex flex-row flex-wrap justify-center items-center"
       >
         {/* item 1 */}
         <div
-          className={`${itemStyle} md:border-r-2`}
+          className={`${styles['gridItem']} md:border-r-2`}
         > 
           <div
-            className={taskDescpStyle}
+            className={styles['taskDescp']}
           >
             <p>
               Frontend Developer: Tymely
@@ -70,7 +67,7 @@ export default function Developer () {
             <p
               className="text-gray-600 text-base"
             >
-              Onboarded <span className={highlightTextStyle}>280</span> users within <span className={highlightTextStyle}>21</span> days of deployment and enhanced user engagement by <span className={highlightTextStyle}>31%</span> by building a dynamic priority task list, allowing users to enter, reorder, and delete
+              Onboarded <span className={styles['highlightText']}>280</span> users within <span className={styles['highlightText']}>21</span> days of deployment and enhanced user engagement by <span className={styles['highlightText']}>31%</span> by building a dynamic priority task list, allowing users to enter, reorder, and delete
               tasks.
             </p>
           </div>
@@ -79,29 +76,10 @@ export default function Developer () {
 
         {/* item 2 */}
         <div
-          className={`${itemStyle}`}
+          className={`${styles['gridItem']}   border-t-2 md:border-t-0`}
         >
           <div
-            className={taskDescpStyle}
-          >
-            <p>
-              Top 15 in UI/UX Hackathon
-            </p>
-            <p
-              className="text-gray-600 text-base"
-            >
-              Crafted user-centric interfaces, researched users to develop prototypes for a car pool app. Emerged in top <span className={highlightTextStyle}>15</span> out of total <span className={highlightTextStyle}>124</span> participants of UI/UX category in a national level hackathon.
-            </p>
-          </div>
-
-        </div>
-
-        {/* item 3 */}
-        <div
-          className={`${itemStyle} md:border-r-2 md:border-b-0`}
-        >
-          <div
-            className={taskDescpStyle}
+            className={styles['taskDescp']}
           >
             <p>
               Full Stack Developer: Banasthali Vidyapith
@@ -109,8 +87,27 @@ export default function Developer () {
             <p
               className="text-gray-600 text-base"
             >
-              Improved experience for <span className={highlightTextStyle}>16k+</span> students and accelerated user engagement by <span className={highlightTextStyle}>15%</span> by building an article saving system, enabling users to refer their saved content
+              Improved experience for <span className={styles['highlightText']}>16k+</span> students and accelerated user engagement by <span className={styles['highlightText']}>15%</span> by building an article saving system, enabling users to refer their saved content
               anytime and anywhere.
+            </p>
+          </div>
+
+        </div>
+
+        {/* item 3 */}
+        <div
+          className={`${styles['gridItem']} md:border-r-2 border-t-2`}
+        >
+          <div
+            className={styles['taskDescp']}
+          >
+            <p>
+              Top 15 in UI/UX Hackathon
+            </p>
+            <p
+              className="text-gray-600 text-base"
+            >
+              Crafted user-centric interfaces, researched users to develop prototypes for a car pool app. Emerged in top <span className={styles['highlightText']}>15</span> out of total <span className={styles['highlightText']}>124</span> participants of UI/UX category in a national level hackathon.
             </p>
           </div>
 
@@ -119,10 +116,10 @@ export default function Developer () {
 
         {/* item 4 */}
         <div
-          className={`${itemStyle} border-b-0 border-b-transparent`}
+          className={`${styles['gridItem']} border-t-2`}
         >
           <div
-            className={taskDescpStyle}
+            className={styles['taskDescp']}
           >
             <p>
               Building Recruitify
@@ -130,7 +127,7 @@ export default function Developer () {
             <p
               className="text-gray-600 text-base"
             >
-              Reduced setup time of placement portals by <span className={highlightTextStyle}>100%</span> by designing and developing a user friendly web application to enable colleges to setup their placement portals in no time. Increased search relevance by up to <span className={highlightTextStyle}>15%</span> by designing a tag-based filtering UI using React.
+              Reduced setup time of placement portals by <span className={styles['highlightText']}>100%</span> by designing and developing a user friendly web application to enable colleges to setup their placement portals in no time. Increased search relevance by up to <span className={styles['highlightText']}>15%</span> by designing a tag-based filtering UI using React.
             </p>
           </div>
 

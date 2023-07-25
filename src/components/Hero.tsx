@@ -1,13 +1,11 @@
-import { MailCheckIcon, GithubIcon, LinkedinIcon } from "lucide-react"
+import { MailCheckIcon, GlobeIcon } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import React from "react"
+import styles from '@/styles/Hero.module.css'
 
 function Navbar () {
   const [isClicked, setIsClicked] = React.useState(false);
-
-  let contactIconStyle = "border-2 border-black p-2 bg-white"
-  let dropdownContentStyle = "w-full text-lg border-black border-t-2 border-l-2 border-r-2 p-[1rem] bg-white hoverYellow"
 
   return (
     <div
@@ -51,24 +49,17 @@ function Navbar () {
             className="flex flex-row gap-2 justify-center items-center"
           >
             <Link
-              className={contactIconStyle}
+              className={styles['contactIcon']}
               href="mailto:palakb188@gmail.com"
             >
               <MailCheckIcon size={20} />
             </Link>
 
             <Link
-              className={contactIconStyle}
-              href='https://www.linkedin.com/in/palakjain9'
+              className={styles['contactIcon']}
+              href='https://heypalakjain.vercel.app/'
             >
-              <LinkedinIcon size={20} />
-            </Link>
-
-            <Link
-              className={contactIconStyle}
-              href='https://github.com/PalakJain9'
-            >
-              <GithubIcon size={20} />
+              <GlobeIcon size={20} />
             </Link>
 
           </div>
@@ -92,19 +83,19 @@ function Navbar () {
       >
         <Link
           href="#developer"
-          className={` ${dropdownContentStyle} border-t-transparent`}
-          > Frontend Dev
+          className={styles['dropdownContent']}
+          > Developer
         </Link>
 
         <Link
           href="#community"
-          className={dropdownContentStyle}
+          className={styles['dropdownContent']}
           > Community
         </Link>
 
         <Link
           href="https://palakjain.hashnode.dev/"
-          className={` ${dropdownContentStyle} border-b-2`}
+          className={styles['dropdownContent']}
           > Blog
         </Link>
       </div>
@@ -113,14 +104,13 @@ function Navbar () {
 }
 
 function Featured () {
-  let itemStyle = "w-1/2 xl:w-1/4 h-[10rem] flex justify-center items-center border-black border-b-2 border-r-2 p-[0.5rem]"
 
   return (
     <div
       className="flex flex-row flex-wrap justify-center items-center w-full"
     >
       <div
-        className={` ${itemStyle} border-l-2`}
+        className={`${styles['featuredItem']} border-l-2`}
       >
         <Image 
           src="/gdsc.svg"
@@ -133,20 +123,20 @@ function Featured () {
       </div>
 
       <div
-        className={itemStyle}
+        className={styles['featuredItem']}
       >
         <Image 
           src="/figma.svg"
           alt="Friends of Figma"
           width={200}
           height={200}
-          className="w-auto h-1/2"
+          className="h-1/2 w-auto"
           title="Friends of Figma"
         />
       </div>
 
       <div
-        className={` ${itemStyle} border-l-2 xl:border-l-0`}
+        className={` ${styles['featuredItem']} border-l-2 xl:border-l-0`}
       >
         <Image 
           src="/tymely.svg"
@@ -159,7 +149,7 @@ function Featured () {
       </div>
 
       <div
-        className={itemStyle}
+        className={styles['featuredItem']}
       >
         <Image 
           src="/recruitify.svg"
