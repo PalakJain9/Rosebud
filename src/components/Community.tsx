@@ -1,8 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Community() {
   return (
-    <div className="flex flex-col xl:flex-row justify-start items-center w-full border-2 border-black border-t-0">
+    <div 
+      id="community"
+      className="flex flex-col xl:flex-row justify-start items-center w-full border-2 border-black border-t-0">
       
       {/* grid */}
       <div
@@ -47,11 +50,16 @@ export default function Community() {
           Encouraged 2000+ women to learn new technologies and strengthened the technical community by 31% by leading a team of 14 women and  delivering 5+ tutorials on Algorithms, 30+ high-quality content on various technologies and by successfully organizing 6+ mega
           events, including Flutter Festival, 30 Days of Google Cloud, etc.
         </p>
-        <button
-          className="buttonStyle mt-[3rem]"
+        
+        <Link
+          href="https://www.linkedin.com/in/palakjain9"
         >
-          Learn More
-        </button>
+          <button
+            className="buttonStyle mt-[3rem]"
+          >
+            Learn More
+          </button>
+        </Link>
       </div>
     </div>
   )

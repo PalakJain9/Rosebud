@@ -4,10 +4,10 @@ import Link from "next/link"
 import React from "react"
 
 function Navbar () {
-  const [isClicked, setIsClicked] = React.useState(false)
+  const [isClicked, setIsClicked] = React.useState(false);
 
   let contactIconStyle = "border-2 border-black p-2 bg-white"
-  let dropdownContentStyle = "w-full text-lg border-black border-t-2 border-l-2 border-r-2 p-[1rem] bg-white hover:bg-yellow"
+  let dropdownContentStyle = "w-full text-lg border-black border-t-2 border-l-2 border-r-2 p-[1rem] bg-white hoverYellow"
 
   return (
     <div
@@ -30,7 +30,7 @@ function Navbar () {
             className="hidden xl:flex flex-row gap-8 justify-center items-center"
           >
             <Link
-              href="#dev"
+              href="#developer"
               > Frontend Dev
             </Link>
 
@@ -40,12 +40,7 @@ function Navbar () {
             </Link>
 
             <Link
-              href="#dev"
-              > Company
-            </Link>
-
-            <Link
-              href="#blogs"
+              href="https://palakjain.hashnode.dev/"
               > Blog
             </Link>
 
@@ -96,7 +91,7 @@ function Navbar () {
         `}
       >
         <Link
-          href="#dev"
+          href="#developer"
           className={` ${dropdownContentStyle} border-t-transparent`}
           > Frontend Dev
         </Link>
@@ -108,13 +103,7 @@ function Navbar () {
         </Link>
 
         <Link
-          href="#dev"
-          className={dropdownContentStyle}
-          > Company
-        </Link>
-
-        <Link
-          href="#blogs"
+          href="https://palakjain.hashnode.dev/"
           className={` ${dropdownContentStyle} border-b-2`}
           > Blog
         </Link>
@@ -233,7 +222,7 @@ export default function Hero () {
             </Link>
 
             <Link
-              href="/"
+              href="https://heypalakjain.vercel.app/"
               className="buttonStyle"
             >
               <button>

@@ -8,6 +8,7 @@ export default function Developer () {
 
   return (
     <div
+      id="developer"
       className="flex flex-col xl:flex-row justify-start items-center w-full border-2 border-black border-t-0"
     >
       {/* text */}
@@ -41,11 +42,11 @@ export default function Developer () {
           </Link>
 
           <Link
-            href="/"
+            href="https://github.com/PalakJain9"
             className="buttonStyle"
           >
             <button>
-              Learn More
+              Check GitHub
             </button>
           </Link>
 

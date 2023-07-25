@@ -41,18 +41,21 @@ function Contact () {
           </p>
           <Link
             href='/'
+            className="hoverYellow"
           >
             Rosebud AI Feedback
           </Link>
 
           <Link
-            href={'/'}
+            href='https://palakjain.hashnode.dev/'
+            className="hoverYellow"
           >
           Blog
           </Link>
 
           <Link
-            href={'/'}
+            href='https://heypalakjain.vercel.app/'
+            className="hoverYellow"
           >
             Portfolio
           </Link>
@@ -67,19 +70,22 @@ function Contact () {
             Contact
           </p>
           <Link
-            href={'/'}
+            href='mailto:palakb188@gmail.com'
+            className="hoverYellow"
           >
             Email
           </Link>
           
             <Link
-            href={'/'}
+            href='https://www.linkedin.com/in/palakjain9'
+            className="hoverYellow"
           >
             LinkedIn
           </Link>
           
             <Link
-            href={'/'}
+            href='https://github.com/PalakJain9'
+            className="hoverYellow"
           >
             GitHub
           </Link>
@@ -111,7 +117,7 @@ export default function Footer () {
           </h1>
 
           <Link
-            href="/resume.pdf"
+            href='mailto:palakb188@gmail.com'
             className="buttonStyle"
           >
             <button>
