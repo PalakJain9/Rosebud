@@ -18,7 +18,7 @@ function Navbar () {
       >
         <Link
           href="/"
-          > Rosebud AI x Palak Jain
+          > Rosebud AI x Palak
         </Link>
 
         <div 
@@ -186,7 +186,6 @@ function Featured () {
 }
 
 export default function Hero () {
-  let buttonStyle = "bg-yellow hover:bg-gray-800 text-gray-800 hover:text-yellow px-4 py-2 border-2 border-black"
   
   return (
     <div 
@@ -226,7 +225,7 @@ export default function Hero () {
           >
             <Link
               href="/resume.pdf"
-              className={buttonStyle}
+              className="buttonStyle"
             >
               <button>
                 View Resume
@@ -235,7 +234,7 @@ export default function Hero () {
 
             <Link
               href="/"
-              className={buttonStyle}
+              className="buttonStyle"
             >
               <button>
                 Learn More
