@@ -1,0 +1,3 @@
+.linkContainer {
+  @apply w-1/2 flex flex-col justify-end items-start gap-3 md:text-lg
+}

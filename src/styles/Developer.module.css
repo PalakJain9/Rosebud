@@ -1,0 +1,11 @@
+.gridItem {
+  @apply w-full md:w-1/2 h-auto md:h-[20rem] flex flex-col justify-center items-center border-black p-[0.5rem]
+}
+
+.taskDescp {
+  @apply h-3/5 w-full text-xl font-bold flex flex-col justify-center items-start gap-4 p-[1rem]
+}
+
+.highlightText {
+  @apply text-black font-extrabold
+}

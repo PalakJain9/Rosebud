@@ -9,7 +9,7 @@ export default function Community() {
       
       {/* grid */}
       <div
-        className="w-full xl:w-1/2 h-full flex flex-row xl:flex-col justify-center items-center border-b-2 border-black xl:border-b-0 xl:border-r-2"
+        className="w-full xl:w-[calc((100%/2)+0.15rem)] h-full flex flex-row xl:flex-col justify-center items-center border-b-2 border-black xl:border-b-0 xl:border-r-2"
       >
         <div
           className="w-full h-[10rem] xl:h-[20rem] flex justify-center items-center border-black xl:border-b-2 border-r-2 xl:border-r-0"
@@ -38,7 +38,7 @@ export default function Community() {
 
       {/* text */}
       <div
-        className="flex flex-col gap-4
+        className="h-full flex flex-col gap-4
         justify-start items-start w-full xl:w-1/2 px-[1rem] md:px-[2rem] xl:px-[5rem] py-[4rem] xl:py-[5rem] text-gray-600 font-bold"
       >
         <h1

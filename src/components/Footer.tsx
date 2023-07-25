@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import styles from "@/styles/Footer.module.css"
 
 function Contact () {
-  const linkStyle = "w-1/2 flex flex-col justify-end items-start gap-3 md:text-lg"
 
   return (
     <div 
-      className="w-full flex flex-col md:flex-row justify-between items-start md:items-center gap-8 px-[1rem] md:px-[2rem] xl:px-[5rem] py-[4rem] xl:py-[5rem] border-black border-2"
+      className="w-full flex flex-col md:flex-row justify-between items-start md:items-center gap-8 px-[1rem] md:px-[2rem] xl:px-[5rem] py-[4rem] xl:py-[5rem] border-black border-2 border-t-0"
     >
       <div
         className="w-full md:w-1/3 flex flex-col justify-start items-start gap-3 text-sm"
@@ -32,7 +32,7 @@ function Contact () {
         className="flex flex-row justify-end items-start gap-10"
       >
         <div
-          className={linkStyle}
+          className={styles['linkContainer']}
         >
           <p
             className="font-bold"
@@ -62,7 +62,7 @@ function Contact () {
         </div>
 
         <div
-          className={linkStyle}
+          className={styles['linkContainer']}
         >
           <p
             className="font-bold"
@@ -113,7 +113,7 @@ export default function Footer () {
           <h1
             className="text-3xl md:text-4xl leading-[2.3rem] md:leading-[2.9rem]"
           >
-            Let's take Rosebud AI to greater heights.
+            Let&apos;s take Rosebud AI to greater heights.
           </h1>
 
           <Link
