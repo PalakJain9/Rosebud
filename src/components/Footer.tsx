@@ -18,13 +18,15 @@ function Contact () {
         </p>
 
         <p>
-          This website is inspired from <Link
-            href='https://www.rosebud.ai/'
-            className="underline underline-offset-4"
-          >
-            rosebud.ai
-          </Link>
+          This website is inspired from rosebud.ai
         </p>
+
+        <Link
+          href='https://github.com/PalakJain9/Rosebud'
+          className="underline underline-offset-4 hoverYellow"
+        >
+          view source code here
+        </Link>
       </div>
 
       {/* links */}
@@ -40,7 +42,7 @@ function Contact () {
             Resources
           </p>
           <Link
-            href='/'
+            href='https://docs.google.com/document/d/1AE-4fha5SdeQGl05xM8tm06mxBEo5aZMaVrAYesC0HY/edit?usp=sharing'
             className="hoverYellow"
           >
             Rosebud AI Feedback

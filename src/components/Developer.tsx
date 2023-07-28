@@ -30,7 +30,7 @@ export default function Developer () {
           className="flex flex-col xl:flex-row flex-wrap gap-4 justify-start items-start pt-[3rem]"
         >
           <Link
-            href="/resume.pdf"
+            href="https://drive.google.com/file/d/109X5iBnLwbzGsljDcr7-uo81LH6KcsiI/view?usp=drive_link"
             className="buttonStyle"
           >
             <button>

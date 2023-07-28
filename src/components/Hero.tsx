@@ -203,7 +203,7 @@ export default function Hero () {
             className="flex flex-row flex-wrap gap-4 justify-start items-center"
           >
             <Link
-              href="/resume.pdf"
+              href="https://drive.google.com/file/d/109X5iBnLwbzGsljDcr7-uo81LH6KcsiI/view?usp=drive_link"
               className="buttonStyle"
             >
               <button>
