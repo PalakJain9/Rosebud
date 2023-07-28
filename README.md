@@ -1,26 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">Rosebud</h1>
+<p align="center">
+built with <span style="color: #8b0000;">&hearts;</span> by <a href="https://heypalakjain.vercel.app/">Palak Jain</a>.
+</p>
 
-## Getting Started
+## Built With
+Developed with ❤ on NextJS and Tailwind CSS, statically typed in TypeScript and deployed on Vercel, following the best practices.
 
+## Installation 
+Install dependencies 
+```
+npm
+```
+
+## Running Server
 First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. You can start editing the code and it auto-updates as you edit the file.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## More Info
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Source Code Pro, a custom Google Font.
 
 ## Learn More
 
