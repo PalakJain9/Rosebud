@@ -16,7 +16,7 @@ export default function Developer () {
         <h1
           className="text-3xl md:text-4xl"
         >
-          Palak Jain: Frontend/Fullstack Developer
+          Palak Jain: Frontend / Fullstack Developer
         </h1>
 
         <h3
